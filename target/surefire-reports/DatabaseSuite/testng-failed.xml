@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DatabaseSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Database SQL Tests(failed)" verbose="0">
+    <parameter name="PlatformName" value="database"/>
+    <classes>
+      <class name="sanity.GrafanaDatabase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="startSession"/>
+          <include name="refreshSession"/>
+          <include name="closeSession"/>
+          <include name="test01_login_from_database_and_verify_header"/>
+        </methods>
+      </class> <!-- sanity.GrafanaDatabase -->
+    </classes>
+  </test> <!-- Database SQL Tests(failed) -->
+</suite> <!-- Failed suite [DatabaseSuite] -->

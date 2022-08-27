@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"/>
+<Enviorment>
+    <!-- TimeOut -->
+<TimeOut>5</TimeOut>
+
+    <!--General -->
+<!-- <PlatformName>web</PlatformName>  can be: web, mobile, api, electron, windows -->
+
+    <!-- Web -->
+<BrowserName>chrome</BrowserName>
+<url>http://localhost:3000/</url>
+<ImageRepo>C:\Users\toxic\IdeaProjects\New_Try\ImageRepository\</ImageRepo>
+<ImageRepository>C:\Users\toxic\IdeaProjects\New_Try\ImageRepository\</ImageRepository>
+
+    <!-- Mobile -->
+<UDID>R5CT341L57L</UDID>
+<AppPackage>com.shivgadhia.android.ukMortgageCalc</AppPackage>
+<AppActivity>.MainActivity</AppActivity>
+<AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
+
+    <!-- Rest API -->
+<uri>http://localhost:3000/</uri>
+
+    <!-- Authentication -->
+<username>admin</username>
+<password>admin</password>
+
+
+    <!-- Electron -->
+<ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
+<ElectronAppPath>C:/Users/toxic/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
+    <!-- electron Todolist app color code -->
+<red>0</red>
+<orange>1</orange>
+<yellow>2</yellow>
+<green>3</green>
+<blue>4</blue>
+<purrple>5</purrple>
+<grey>6</grey>
+
+    <!--Desktop -->
+<AppID>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</AppID>
+<WindowsServer>http://127.0.0.1:4723/</WindowsServer>
+<VerificationExtnetion>Display is</VerificationExtnetion>
+
+    <!--Database -->
+<DBurl>jdbc:mysql://sql11.freesqldatabase.com:3306/sql11508487</DBurl>
+<DBusername>sql11508487</DBusername>
+<DBpassword>3hPX5erQNi</DBpassword>
+
+    <!-- Data Driven Testing -->
+<DDTFile>.\DDTFiles/users.csv</DDTFile>
+</Enviorment>

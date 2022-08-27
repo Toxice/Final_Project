@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DesktopSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Desktop UI Tests(failed)" verbose="0">
+    <parameter name="PlatformName" value="desktop"/>
+    <classes>
+      <class name="sanity.CalculatorDesktop">
+        <methods>
+          <include name="test01_adding_one_to_eight"/>
+          <include name="beforeMethod"/>
+          <include name="startSession"/>
+          <include name="refreshSession"/>
+          <include name="test02_adding_five_to_six"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- sanity.CalculatorDesktop -->
+    </classes>
+  </test> <!-- Desktop UI Tests(failed) -->
+</suite> <!-- Failed suite [DesktopSuite] -->

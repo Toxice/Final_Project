@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 49.574 s <<< FAILURE! - in TestSuite
+test06_verify_avatar_icon(sanity.GrafanaWeb)  Time elapsed: 1.169 s  <<< FAILURE!
+java.lang.AssertionError: 
+error comparing image file FindFailed: C:\Users\toxic\IdeaProjects\New_Try\ImageRepository\NewAvatar.png: (44x37) in R[0,0 1536x864]@S(0)
+  Line 2291, in file Region.java
+
+	at sanity.GrafanaWeb.test06_verify_avatar_icon(GrafanaWeb.java:57)
+

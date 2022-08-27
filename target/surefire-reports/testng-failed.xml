@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WebSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Web UI Tests(failed)" verbose="0">
+    <parameter name="PlatformName" value="web"/>
+    <classes>
+      <class name="sanity.GrafanaWeb">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="startSession"/>
+          <include name="refreshSession"/>
+          <include name="closeSession"/>
+          <include name="test06_verify_avatar_icon"/>
+        </methods>
+      </class> <!-- sanity.GrafanaWeb -->
+    </classes>
+  </test> <!-- Web UI Tests(failed) -->
+</suite> <!-- Failed suite [WebSuite] -->
